@@ -1,0 +1,59 @@
+// font family: Muli
+// default font size: 10px
+// inherited from _reset.scss
+
+// Typography
+@mixin font($size, $weight, $line-height) {
+  font-weight: $weight;
+  font-size: $size;
+  line-height: $line-height;
+}
+
+h1 {
+  @include font(2.6rem, 700, 2.6rem);
+}
+
+h2 {
+  @include font(2.2rem, 700, 2.6rem);
+}
+
+.body {
+  @include font(1.6rem, 400, 2.4rem);
+}
+
+.callout {
+  @include font(1.6rem, 600, 2.2rem);
+}
+
+.callout-small {
+  @include font(1.5rem, 600, 2rem);
+}
+
+.caption {
+  @include font(1.5rem, 600, 1.6rem);
+}
+
+// Bootstrap container
+.container {
+  width: 100%;
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto;
+
+  @media (min-width: 57.6em) {
+    max-width: 54em;
+  }
+
+  @media (min-width: 76.8em) {
+    max-width: 72em;
+  }
+
+  @media (min-width: 99.2em) {
+    max-width: 96em;
+  }
+
+  @media (min-width: 120em) {
+    max-width: 114em;
+  }
+}
